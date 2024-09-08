@@ -1,0 +1,88 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sql
+*.sqlite3
+*.db
+*.dat
+*.tmp
+*.swp
+
+# Media and static files
+/media
+/staticfiles
+/static
+
+# Ignore environment variables file
+.env
+
+# Ignore all migrations
+**/migrations/*
+
+# Ignore local settings
+local_settings.py
+
+# Ignore virtual environment folder
+venv/
+env/
+ENV/
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# Ignore pytest
+.pytest_cache/
+
+# Ignore pipenv
+Pipfile.lock
+
+# Ignore MyPy
+.mypy_cache/
+
+# Ignore Celery beat schedule files
+celerybeat-schedule
+
+# Ignore secret files
+secrets.json
+
+# Ignore compiled and minified files
+*.css.map
+*.js.map
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore Thumbnails
+_thumbs/
+
+# Ignore Sphinx documentation
+docs/_build/
+
+# Ignore Bandit security tool output
+bandit.yaml
+
+# Ignore local Docker files
+docker-compose.override.yml
+.dockerignore
