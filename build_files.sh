@@ -1,2 +1,2 @@
-uv pip install -r requirements.txt;
-python 3.9 manage.py collectstatic
+pip install -r requirements.txt;
+python 3.10 manage.py collectstatic
