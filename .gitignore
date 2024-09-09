@@ -36,6 +36,7 @@ venv/
 env/
 ENV/
 
+
 # Ignore IDE files
 .vscode/
 .idea/
