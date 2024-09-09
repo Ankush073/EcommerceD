@@ -1,3 +1,3 @@
 uv pip install -r requirements.txt
-python3.10 manage.py collectstatic
+python3.12 manage.py collectstatic
 
