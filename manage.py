@@ -20,3 +20,12 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+# // {
+#     //   "src": "build_files.sh",
+#     //   "use": "@vercel/static-build",
+#     //   "config": {
+#     //     "distDir": "staticfiles_build"
+#     //   }
+#     // }
