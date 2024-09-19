@@ -121,16 +121,12 @@ USE_TZ = True
 CLOUD_NAME = os.environ.get('CLOUD_NAME'),
 CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY'),
 CLOUDINARY_SECRET_KEY = os.environ.get('CLOUDINARY_SECRET_KEY')
-# CLOUDINARY_STORAGE={
-#       'CLOUD_NAME':CLOUD_NAME,
-#       'API_KEY':CLOUDINARY_API_KEY,
-#       'SECRET_KEY':CLOUDINARY_SECRET_KEY
-# }
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-STATIC_URL = 'static/'
+
+STATIC_URL = '/static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')
 MEDIA_URL = '/images/'
