@@ -11,7 +11,7 @@
     },
     {
       "src":"build_files.sh",
-      "use":"@vercel/satic-build",
+      "use":"@vercel/static-build",
       "config":{
         "distDir":"saticfiles_build"
       }
