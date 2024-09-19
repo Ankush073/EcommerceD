@@ -9,7 +9,9 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
+# import cloudinary
+# import cloudinary.uploader
+# import cloudinary.api
 import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -33,7 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+     'cloudinary',
+     'cloudinary_storage',
     'store.apps.StoreConfig',
 ]
 
@@ -115,11 +118,19 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+CLOUD_NAME = os.environ.get('CLOUD_NAME'),
+CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY'),
+CLOUDINARY_SECRET_KEY = os.environ.get('CLOUDINARY_SECRET_KEY')
+# CLOUDINARY_STORAGE={
+#       'CLOUD_NAME':CLOUD_NAME,
+#       'API_KEY':CLOUDINARY_API_KEY,
+#       'SECRET_KEY':CLOUDINARY_SECRET_KEY
+# }
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'static'),
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles_build','static')
 MEDIA_URL = '/images/'
