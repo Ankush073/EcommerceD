@@ -124,12 +124,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-if os.getenv('VERCEL_ENV'):
-    # On Vercel, don't use STATICFILES_DIRS as static files are in staticfiles_build
-    STATICFILES_DIRS = []
-else:
-    # For local development
-    STATICFILES_DIRS = [
+# if os.getenv('VERCEL_ENV'):
+#     # On Vercel, don't use STATICFILES_DIRS as static files are in staticfiles_build
+#     STATICFILES_DIRS = []
+# else:
+#     # For local development
+STATICFILES_DIRS = [
         os.path.join(BASE_DIR, 'static'),
     ]
 
