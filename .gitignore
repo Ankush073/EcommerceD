@@ -17,9 +17,7 @@ __pycache__/
 *.swp
 
 # Media and static files
-/media
-/staticfiles
-/static
+
 
 # Ignore environment variables file
 .env
