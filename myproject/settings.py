@@ -124,10 +124,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+if os.getenv('VERCEL_ENV'):
+    # On Vercel, don't use STATICFILES_DIRS as static files are in staticfiles_build
+    STATICFILES_DIRS = []
+else:
+    # For local development
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static'),
+    ]
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 MEDIA_URL = '/images/'
-
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
