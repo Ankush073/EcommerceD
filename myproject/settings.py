@@ -115,9 +115,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-CLOUD_NAME = os.environ.get('CLOUD_NAME'),
-CLOUDINARY_API_KEY = os.environ.get('CLOUDINARY_API_KEY'),
-CLOUDINARY_SECRET_KEY = os.environ.get('CLOUDINARY_SECRET_KEY')
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
